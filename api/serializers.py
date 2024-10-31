@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Movie
 
-class MoviesSerializer(serializers.ModelSerializer):
+class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = ('id', 'title', 'year', 'imdbID', 'typeMovie', 'poster')
+        fields = ['id', 'title', 'year', 'poster', 'imdbID']

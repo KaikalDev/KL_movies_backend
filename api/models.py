@@ -1,9 +1,10 @@
 from django.db import models
 
-# Create your models here.
 class Movie(models.Model):
-    title = models.CharField(max_length=100)
-    year = models.IntegerField()
-    imdbID = models.CharField(max_length=9, unique=True)
-    typeMovie = models.CharField(max_length=100)
+    title = models.CharField(max_length=255)
+    year = models.CharField(max_length=4)
     poster = models.URLField()
+    imdbID = models.CharField(max_length=20, unique=True)
+
+    def __str__(self):
+        return self.title
