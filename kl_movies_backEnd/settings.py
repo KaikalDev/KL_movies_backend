@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ga)whio9^5!3whx5n7vcpk1)&ru052g*x-14wbol$d-fj#__))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['kl-movies-api.vercel.app']
 
 
 # Application definition
